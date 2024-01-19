@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1007124148954",
+    "project_id": "basicapp-371a6",
+    "storage_bucket": "basicapp-371a6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1007124148954:android:8a50fb0a6c0c9c53e32be3",
+        "android_client_info": {
+          "package_name": "com.example.assesmentproject"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDJw7HRMqm6jlnTY9CtEgh1YMu6WRMLO_k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
