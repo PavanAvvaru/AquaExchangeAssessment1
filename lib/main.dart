@@ -25,6 +25,10 @@ class MyApp extends StatelessWidget {
           useMaterial3: true,
         ),
         home: LoginPage()
+      /*
+      email : nani@gmail.com
+      password : nani@123
+      */
         );
   }
 }
