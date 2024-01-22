@@ -93,6 +93,7 @@ class UserState extends State<User> {
     required String labelText,
     bool isEmail = false,
     bool isPhoneNumber = false,
+    bool isUserName = false,
   }) {
     return Container(
       decoration: BoxDecoration(
@@ -120,9 +121,13 @@ class UserState extends State<User> {
             }
           } else if (isPhoneNumber) {
             if (value == null || value.isEmpty) {
-              return 'please enter your phone number';
+              return 'Please enter your phone number';
             } else if (!RegExp(r'^[6-9]\d{9}$').hasMatch(value)) {
-              return 'please enter a valid 10-digit phone number starts with 6to9';
+              return 'Please enter a valid 10-digit phone number starting with 6 to 9';
+            }
+          } else if (isUserName) {
+            if (value == null || value.length < 3) {
+              return 'Name must be at least 3 characters';
             }
           }
           return null;
