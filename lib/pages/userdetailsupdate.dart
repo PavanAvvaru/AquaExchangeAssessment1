@@ -118,6 +118,7 @@ class _UserDetailsUpdatePageState extends State<UserDetailsUpdatePage> {
     required String labelText,
     bool isEmail = false,
     bool isPhoneNumber = false,
+    bool isUserName = false,
   }) {
     return Container(
       decoration: BoxDecoration(
@@ -148,6 +149,10 @@ class _UserDetailsUpdatePageState extends State<UserDetailsUpdatePage> {
               return 'Please enter your phone number';
             } else if (!RegExp(r'^[6-9]\d{9}$').hasMatch(value)) {
               return 'Please enter a valid 10-digit phone number starting with 6, 7, 8, or 9';
+            }
+          } else if (isUserName) {
+            if (value == null || value.length < 3) {
+              return 'Name must be at least 3 characters';
             }
           }
           return null;
